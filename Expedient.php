@@ -20,7 +20,12 @@
 			$this->historicalAppointment = $histoApp;
 		}	
 
+
 		public function viewExpedient() {
+
+		}
+
+		public function deleteExpedient(){
 
 		}
 
