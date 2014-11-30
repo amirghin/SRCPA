@@ -1,12 +1,12 @@
 <?php
-	include("Owner.php"); //Including Owner Class to allow use of aggregation
+	//include("Owner.php"); //Including Owner Class to allow use of aggregation
 
 	class Pet{
-		private $idPet;
-		private $name;
-		private $type;
-		private $breed;
-		private $birthdayDate;
+		private $idPet = 0;
+		private $name = "";
+		private $type = "";
+		private $breed = "";
+		private $birthdayDate = "";
 		//private $owner  //aggregation from owner, need to be initialized
 
 		public function __construct(){

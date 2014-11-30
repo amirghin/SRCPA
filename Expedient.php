@@ -10,8 +10,14 @@
 		private $nextAppointment = ""; //Type appointment
 		private $historicalAppointment = array(); //Type appointment
 
-		public function __construct(){
-
+		public function __construct(&$pet, &$owner, $idExp, $con, $currentMeds, $nextApp, $histoApp){
+			$this->pet = &$pet;
+			$this->owner = &$owner;
+			$this->idExpedient = $idExp;
+			$this->conditions = $con;
+			$this->currentMedications = $currentMeds;
+			$this->nextAppointment = $nextApp;
+			$this->historicalAppointment = $histoApp;
 		}	
 
 		public function viewExpedient() {
