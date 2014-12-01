@@ -3,6 +3,7 @@
 	class Owner{
 		private $idOwner = 0;
 		private $name = "";
+		private $lastName = "";
 		private $phone = "";
 		private $email = "";
 		private $cedula = "";
@@ -17,6 +18,10 @@
 
 		public function setName($name){
 			$this->name = $name;
+		}
+
+		public function setLasName($lastName){
+			$this->lastName = $lastName;
 		}
 
 		public function setPhone($phone){
