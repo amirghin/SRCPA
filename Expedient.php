@@ -34,12 +34,12 @@
 		}
 
 
-		public function setPet($pet){
-			$this->pet = $pet; 
+		public function setPet(&$pet){
+			$this->pet = &$pet; 
 		}
 
-		public function setOwner($owner){
-			$this->owner = $owner;
+		public function setOwner(&$owner){
+			$this->owner = &$owner;
 		}
 
 		public function setIdExpedient($idExp){
