@@ -2,13 +2,13 @@
 
 	class Expedient{
 
-		private $pet = ""; //Type Pet
+		//private $pet = ""; //Type Pet
 		private $owner = ""; //Type Owner
 		private $idExpedient = "";
 		private $conditions = "";
 		private $currentMedications = "";
 		private $nextAppointment = ""; //Type appointment
-		private $historicalAppointment = array(); //Type appointment
+		private $historicalAppointment = array(""); //Type appointment
 
 		public function __construct(&$pet, &$owner, $idExp, $con, $currentMeds, $nextApp, $histoApp){
 			$this->pet = &$pet;
@@ -54,7 +54,7 @@
 			$this->currentMedications = $currentMeds;
 		}
 
-		public function setNextAppointment(nextApp){
+		public function setNextAppointment($nextApp){
 			$this->nextAppointment = $nextApp;
 		}
 

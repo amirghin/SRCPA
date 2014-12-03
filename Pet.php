@@ -9,7 +9,11 @@
 		private $birthdayDate = "";
 		//private $owner  //aggregation from owner, need to be initialized
 
-		public function __construct(){
+		public function __construct($n, $t, $b, $bd){
+			$this->name=$n;
+			$this->type=$t;
+			$this->breed = $b;
+			$this->birthdayDate = $bd;
 
 		}
 

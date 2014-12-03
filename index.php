@@ -47,8 +47,8 @@
 								<input name="raza" type="text" class="form-control"/>
 							</div>
 							<div class="form-group">
-								<label for="raza">Fecha de nacimiento</label>
-								<input name="raza" type="text" class="form-control" required/>
+								<label for="fecha_nacimiento">Fecha de nacimiento</label>
+								<input name="fecha_nacimiento" type="text" class="form-control" required/>
 							</div>
 						</fieldset>
 						<fieldset>
@@ -71,6 +71,10 @@
 							</div>
 							<input type="submit" value="Enviar">
 						</fieldset>
+						<fieldset>
+
+						</fieldset>				
+
 					</form>	
 				</div>
 				<div class="borrar_expediente">
