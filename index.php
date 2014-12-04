@@ -32,7 +32,7 @@
 				<div class="crear_expediente">
 					<h2>Crear expediente</h2>
 					<form action="AppInit.php" method="POST" role="form">
-						<fieldset>
+						<fieldset class="col-md-6">
 							<legend>Datos de la mascota</legend>
 							<div class="form-group">
 								<label for="nombre_mascota">Nombre <span class="error">*</span></label>
@@ -51,7 +51,7 @@
 								<input name="fecha_nacimiento" type="text" class="form-control" required/>
 							</div>
 						</fieldset>
-						<fieldset>
+						<fieldset class="col-md-6">
 							<legend>Datos del due&#241;o</legend>
 							<div class="form-group">
 								<label for="nombre">Nombre <span class="error">*</span></label>
@@ -61,20 +61,33 @@
 								<label for="apellido">Primer Apellido <span class="error">*</span></label>
 								<input name="apellido" type="text" class="form-control" required/>
 							</div>	
-							<div class="form-group">
+							<div class="form-group col-md-6">
 								<label for="telefono">Numero de telefono <span class="error">*</span></label>
 								<input name="telefono" type="text" class="form-control" required/>
+							</div>	
+							<div class="form-group col-md-6">
+								<label for="email">Email <span class="error">*</span></label>
+								<input name="email" type="text" class="form-control" required/>
 							</div>	
 							<div class="form-group">
 								<label for="cedula">Numero de Cedula <span class="error">*</span></label>
 								<input name="cedula" type="text" class="form-control" required/>
 							</div>
-							<input type="submit" value="Enviar">
+							
 						</fieldset>
-						<fieldset>
 
+						<fieldset class="col-md-12">
+							<legend>Informacion Medica</legend>
+							<div class="form-group">
+								<label for="condiciones">Condiciones <span class="error">*</span></label>
+								<textarea name="condiciones" class="form-control" required/></textarea>
+							</div>		
+							<div class="form-group">
+								<label for="condiciones">Medicamento Actual <span class="error">*</span></label>
+								<textarea name="condiciones" class="form-control" required/></textarea>
+							</div>					
 						</fieldset>				
-
+						<input type="submit" value="Enviar">
 					</form>	
 				</div>
 				<div class="borrar_expediente">

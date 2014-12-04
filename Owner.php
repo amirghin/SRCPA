@@ -8,7 +8,12 @@
 		private $email = "";
 		private $cedula = "";
 
-		public function __construct(){
+		public function __construct($n, $ln, $p, $e, $c){
+			$this->name = $n;
+			$this->lastName = $ln;
+			$this->phone = $p;
+			$this->email = $e;
+			$this->cedula = $c;
 
 		}
 
@@ -54,6 +59,10 @@
 
 		public function getCedula(){
 			return $this->cedula;
+		}
+
+		public function __toString(){
+			return $this;
 		}
 
 	}
