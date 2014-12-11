@@ -7,7 +7,7 @@ Include "header.php";
 	</div>
 	<div class="crear_expediente">
 		<h2>Crear expediente</h2>
-		<form action="AppInit.php" method="POST" role="form">
+		<form action="AppInit.php" method="POST" role="form" data-parsley-validate>
 			<fieldset class="col-md-6">
 				<legend>Datos de la mascota</legend>
 				<div class="form-group">
@@ -43,7 +43,7 @@ Include "header.php";
 				</div>	
 				<div class="form-group col-md-6">
 					<label for="email">Email <span class="error">*</span></label>
-					<input name="email" type="text" class="form-control" required/>
+					<input name="email" type="email" class="form-control" required data-parsley-trigger="change"/>
 				</div>	
 				<div class="form-group">
 					<label for="cedula">Numero de Cedula <span class="error">*</span></label>
