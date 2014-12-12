@@ -1,5 +1,6 @@
 <?php
 Include "header.php";
+Include "navigation.php";
 ?>
 <section class="content row">
 
