@@ -80,3 +80,12 @@ table {
 .content .error{
 	color:red;
 }
+
+.parsley-errors-list{
+	color: #ff0000;
+}
+
+.login{
+	margin:0 auto;
+	float: none;
+}
