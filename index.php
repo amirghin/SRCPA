@@ -1,9 +1,8 @@
 <?php
 Include "header.php";
-session_start();
-$_SESSION["nombre"] = $_POST["nombre_mascota"];
-$_SESSION["contrasena"] = $_POST["password"];
+
 ?>
+
 <section class="content row">
 
 	<div class="login col-md-6">
@@ -11,8 +10,8 @@ $_SESSION["contrasena"] = $_POST["password"];
 			<fieldset>
 				<legend>Iniciar sesion</legend>
 				<div class="form-group">
-					<label for="nombre_mascota">Nombre <span class="error">*</span></label>
-					<input name="nombre_mascota" type="text" class="form-control" required/>
+					<label for="nombre_usuario">Nombre <span class="error">*</span></label>
+					<input name="nombre_usuario" type="text" class="form-control" required/>
 				</div>
 				<div class="form-group">
 					<label for="tipo">Contrasena <span class="error">*</span></label>

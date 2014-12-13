@@ -57,6 +57,11 @@ table {
 /*-------Header----------*/
 /*-----------------------*/
 
+h1{
+	text-align: center;
+	padding: 10px 0;
+}
+
 .top-navigation ul{
 	text-align: center;
 }

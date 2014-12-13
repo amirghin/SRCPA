@@ -1,12 +1,17 @@
 <?php
 Include "header.php";
 Include "navigation.php";
+session_start();
+$_SESSION["nombre"] = $_POST["nombre_usuario"];
+$_SESSION["contrasena"] = $_POST["password"];
+echo $_SESSION["nombre"];
 ?>
+
 <section class="content row">
 
 	<div class="crear_expediente">
 		<h2>Crear expediente</h2>
-		<form action="AppInit.php" method="POST" role="form" data-parsley-validate>
+		<form action="crear_expediente.php" method="POST" role="form" data-parsley-validate>
 			<fieldset class="col-md-6">
 				<legend>Datos de la mascota</legend>
 				<div class="form-group">

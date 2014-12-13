@@ -6,7 +6,7 @@
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$( "#datepicker" ).datepicker();
-			console.log("hola");
+
 		})
 	</script>
 </html>
