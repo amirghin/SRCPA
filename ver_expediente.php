@@ -6,6 +6,8 @@ Include "navigation.php"
 
 
 <a href="formulario_cita.php">Crear proxima cita</a>
+<a href="">Borrar Expediente</a>
+<a href="">Editar Expediente</a>
 
 <?php
 Include "footer.php";

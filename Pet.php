@@ -7,14 +7,14 @@
 		private $type = "";
 		private $breed = "";
 		private $birthdayDate = "";
-		private $owner = object; //aggregation from owner, need to be initialized
+		private $idOwner = ""; //aggregation from owner, need to be initialized
 
-		public function __construct($n, $t, $b, $bd, &$o){
+		public function __construct($n, $t, $b, $bd, $io){
 			$this->name=$n;
 			$this->type=$t;
 			$this->breed = $b;
 			$this->birthdayDate = $bd;
-			$this->owner = &$o;
+			$this->idOwner = $io;
 
 		}
 
@@ -61,7 +61,7 @@
 		}
 
 		public function getOwner(){
-			//return $this->owner->toString();
+			return $this->idOwner->;
 		}
 	}
 

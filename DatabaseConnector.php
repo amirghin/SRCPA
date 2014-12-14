@@ -1,8 +1,8 @@
 <?php
-//$con = mysqli_connect("localhost","root","1234","Veterinaria"); //1234 es el password mio
+$con = mysqli_connect("localhost","root","1234","Veterinaria"); //1234 es el password mio
 
 // Check connection
-/*if (mysqli_connect_errno())
+if (mysqli_connect_errno())
   {
   echo "Failed to connect to MySQL: " . mysqli_connect_error();
   }else{
@@ -20,9 +20,9 @@
 	} else {
 	    echo "0 results";
 	}
-	$con->close();*/
+	$con->close();
 
-class DatabaseConnector{
+/*class DatabaseConnector{
 	public function __construct(){
 		$server: "localhost";
 		$user: "root";
@@ -39,7 +39,7 @@ class DatabaseConnector{
 
 
 
-}
+}*/
 
 
 ?>

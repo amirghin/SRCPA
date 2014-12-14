@@ -6,7 +6,7 @@ Include "DatabaseConnector.php";
 <section class="content row">
 
 	<div class="login col-md-6">
-		<form action="formulario_expediente.php" method="POST" role="form" data-parsley-validate>
+		<form action="landing_page.php" method="POST" role="form" data-parsley-validate>
 			<fieldset>
 				<legend>Iniciar sesion</legend>
 				<div class="form-group">
