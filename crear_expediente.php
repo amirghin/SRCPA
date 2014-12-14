@@ -5,9 +5,7 @@ Include "Owner.php";
 Include "Pet.php";
 Include "Expedient.php";
 Include "header.php";
-	//class AppInit{
-		
-	//}
+
 ?>
 	<h2>Formulario Creado Exitosamente</h2> 
 <?php	
