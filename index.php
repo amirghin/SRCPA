@@ -1,6 +1,6 @@
 <?php
 Include "header.php";
-
+Include "DatabaseConnector.php";
 ?>
 
 <section class="content row">
