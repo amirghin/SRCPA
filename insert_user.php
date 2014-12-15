@@ -4,7 +4,7 @@ Include "DatabaseConnector.php";
 
 if ($_POST['password']!= $_POST['verificar_password'])
  	{
-     	echo("Oops! Password did not match! Try again. ");
+     	echo("Las contrase&ntilde;as no son iguales");
  	}else{
 
  		$options = array('cost' => 11);
@@ -15,9 +15,8 @@ if ($_POST['password']!= $_POST['verificar_password'])
 		
 
 		$insert_user = "INSERT INTO usuarios (nombre, password, roles_idrol) VALUES ('${usuario}','${password}',${tipo})";
-		//mysqli_query($con,$insert_user);
 		if (mysqli_query($con, $insert_user)) {
-    		echo "New record created successfully";
+    		echo "Usuario Creado de manera exitosa";
 		} else {
     		echo "Error: " . mysqli_error($con);
 		}

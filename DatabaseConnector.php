@@ -1,5 +1,5 @@
 <?php
-$con = mysqli_connect("localhost","root","1234","Veterinaria"); //1234 es el password mio
+$con = mysqli_connect("localhost","vetadmin","0101d8cf","Veterinaria"); //1234 es el password mio
 
 // Check connection
 if (mysqli_connect_errno())

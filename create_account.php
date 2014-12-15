@@ -1,7 +1,20 @@
+<?php
+Include "DatabaseConnector.php";
+Include "header.php";
+
+if(isset($_POST['create_user'])){
+
+	Include "insert_user.php";
+	 }
+
+?>
+
+
+
 <section class="content row">
 
 	<div class="login col-md-6">
-		<form action="insert_user.php" method="POST" role="form" data-parsley-validate>
+		<form action="" method="POST" role="form" data-parsley-validate>
 			<fieldset>
 				<legend>Crear Usuario</legend>
 				<div class="form-group">
@@ -28,7 +41,7 @@
 				</div>
 
 
-				<input type="submit" value="Crear Cuenta">
+				<input type="submit" value="Crear Cuenta" name="create_user">
 			</fieldset>
 			
 			
@@ -36,3 +49,7 @@
 	</div>
 </section>
 
+
+<?php
+Include "footer.php";
+?>
