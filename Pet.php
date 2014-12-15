@@ -10,10 +10,13 @@
 		private $idOwner = ""; //aggregation from owner, need to be initialized
 
 		public function __construct($n, $t, $b, $bd, $io){
+			$newformat = date('Y-m-d',strtotime($bd));
+			
 			$this->name=$n;
 			$this->type=$t;
 			$this->breed = $b;
-			$this->birthdayDate = $bd;
+			//$this->birthdayDate = $bd;
+			$this->birthdayDate = $newformat;
 			$this->idOwner = $io;
 
 		}
@@ -35,7 +38,8 @@
 		}
 
 		public function setBirthdayDate($birthday){
-			$this->birthdayDate = $birthday;
+			$newformat = date('Y-m-d',$birthday);
+			$this->birthdayDate = $newformat;
 		}
 
 
@@ -62,6 +66,18 @@
 
 		public function getOwner(){
 			return $this->idOwner;
+		}
+
+		public function sendToDatabase(){
+			Include "DatabaseConnector.php";
+			$insert_Mascota = "INSERT INTO Animal (nombre, tipo, raza, fechaNacimiento, Dueno_idDueno) VALUES ('{$this->name}','{$this->type}', '{$this->breed}' , '{$this->birthdayDate}',{$this->idOwner})";
+			if (mysqli_query($con, $insert_Mascota)) {
+			echo "Animal Creado de manera exitosa";
+			} else {
+			echo "Error: " . mysqli_error($con);
+			}
+
+		
 		}
 	}
 

@@ -37,9 +37,10 @@ Include "navigation.php";
 				<div class="form-group">
 					<a href="formulario_dueno.php">Crear dueno</a>
 				</div>
+				<input type="submit" value="Enviar">
 			</fieldset>
 
-			<fieldset class="col-md-6">
+			<!--<fieldset class="col-md-6">
 				<legend>Informacion Medica</legend>
 				<div class="form-group">
 					<label for="condiciones">Condiciones <span class="error">*</span></label>
@@ -49,8 +50,8 @@ Include "navigation.php";
 					<label for="condiciones">Medicamento Actual <span class="error">*</span></label>
 					<textarea name="condiciones" class="form-control" required/></textarea>
 				</div>					
-			</fieldset>				
-			<input type="submit" value="Enviar">
+			</fieldset>	-->			
+			
 		</form>	
 	</div>
 
