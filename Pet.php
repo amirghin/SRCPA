@@ -61,7 +61,7 @@
 		}
 
 		public function getOwner(){
-			return $this->idOwner->;
+			return $this->idOwner;
 		}
 	}
 
