@@ -30,17 +30,31 @@ Include "navigation.php";
 				<div class="form-group"> 
 					<label>Dueno</label>
 					<select class="form-control" name="dueno">
-						<option value="1">Nombre: fulanito - cedula:</option>
-						<option></option>
+						<option value=""></option>
+						<?php
+						Include "DatabaseConnector.php";
+
+						$query_duenos = "SELECT idDueno, CONCAT_WS(' ', nombre,apellido1,cedula) AS dueno FROM Dueno";
+						$info_duenos = mysqli_query($con, $query_duenos);
+						if (mysqli_num_rows($info_duenos) > 0) {
+
+								while($row = mysqli_fetch_assoc($info_duenos)) {
+
+									echo "<option value=\"${row['idDueno']}\">${row['dueno']}</option>";
+
+								}
+
+						}
+						?>
+						
 					</select>	
 				</div>
 				<div class="form-group">
 					<a href="formulario_dueno.php">Crear dueno</a>
 				</div>
-				<input type="submit" value="Enviar">
 			</fieldset>
 
-			<!--<fieldset class="col-md-6">
+			<fieldset class="col-md-6">
 				<legend>Informacion Medica</legend>
 				<div class="form-group">
 					<label for="condiciones">Condiciones <span class="error">*</span></label>
@@ -50,8 +64,8 @@ Include "navigation.php";
 					<label for="condiciones">Medicamento Actual <span class="error">*</span></label>
 					<textarea name="condiciones" class="form-control" required/></textarea>
 				</div>					
-			</fieldset>	-->			
-			
+			</fieldset>				
+			<input type="submit" value="Enviar">
 		</form>	
 	</div>
 
