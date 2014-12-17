@@ -3,9 +3,10 @@ Include "header.php";
 Include "navigation.php";
 ?>
 
-<form action="crear_expediente.php" method="POST" role="form" data-parsley-validate>
+<br><br>
+<form action="" method="POST" role="form" data-parsley-validate>
 	<fieldset class="col-md-6">
-		<legend>Datos del due&#241;o</legend>
+		<legend>Datos del due&#241;o:</legend><br>
 		<div class="form-group">
 			<label for="nombre">Nombre <span class="error">*</span></label>
 			<input name="nombre" type="text" class="form-control" required/>
@@ -26,9 +27,12 @@ Include "navigation.php";
 			<label for="cedula">Numero de Cedula <span class="error">*</span></label>
 			<input name="cedula" type="text" class="form-control" required/>
 		</div>
-	
+		<input type="submit" value="Crear Due&ntilde;o">
 	</fieldset>
+
 </form>
+		
+
 
 <?php
 Include "footer.php";

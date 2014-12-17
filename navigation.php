@@ -4,7 +4,7 @@
 					<ul class="row">
 						<li class="col-md-4"><a href="landing_page.php">Buscar Expediente</a></li>
 						<li class="col-md-4"><a href="formulario_expediente.php">Ingresar Mascota</a></li>
-						<li class="col-md-4"><a href="">Ingresar Dueno</a></li>
+						<li class="col-md-4"><a href="formulario_dueno.php">Ingresar Dueno</a></li>
 					
 					</ul>	
 				</nav>

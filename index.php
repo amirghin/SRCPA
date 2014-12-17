@@ -35,6 +35,8 @@ if(isset($_POST['login'])){
 	$password = $_POST["password"];
 	$query_user = "SELECT password FROM usuarios WHERE nombre = '${user}'";
 	$hash = mysqli_fetch_assoc(mysqli_query($con, $query_user));
+	echo $password;
+	echo $hash['password'];
 	mysqli_close($con);
 	if (password_verify($password, $hash['password'])) {
 	    header('Location: /SRCPA/landing_page.php');

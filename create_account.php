@@ -1,6 +1,7 @@
 <?php
 Include "DatabaseConnector.php";
 Include "header.php";
+Include "navigation.php";
 
 if(isset($_POST['create_user'])){
 
@@ -9,7 +10,7 @@ if(isset($_POST['create_user'])){
 
 ?>
 
-
+<br><br>
 
 <section class="content row">
 
