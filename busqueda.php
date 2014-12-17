@@ -28,6 +28,13 @@ if (mysqli_num_rows($query_info) > 0) {
                 <td><?php echo "${row['raza']}"?></td>
                 <td><?php echo "${row['fechaNacimiento']}"?></td>
                 <td><?php echo "${row['dueno']}"?></td>
+                <td>
+                    <form action="ver_expediente.php" method="post">
+                        <input type="submit" value="Ver Expediente">
+                        <input type="hidden" name='idAnimal' value="<?php echo "${row['idAnimal']}"?>">
+                        <input type="hidden" name='nombreAnimal' value="<?php echo "${row['nombre']}"?>">
+                    </form>
+                </td>
 
             </tr>
        
