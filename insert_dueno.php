@@ -2,11 +2,11 @@
 
 Include "DatabaseConnector.php";
 
-$nombre = 'adrian';
-$apellido = 'astorga';
-$telefono = '22151818';
-$email = 'adrian@aastorga.com';
-$cedula = '113620726';
+$nombre = $_POST['nombre'];
+$apellido = $_POST['apellido'];
+$telefono = $_POST['telefono'];
+$email = $_POST['email'];
+$cedula = $_POST['cedula'];
 
 
 $insert_user = "INSERT INTO Dueno (nombre, telefono, email, cedula, apellido1) 
