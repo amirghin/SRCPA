@@ -23,6 +23,8 @@ Include "navigation.php";
 						<option>Emergencia</option>
 					</select>		
 				</div>
+				<input type="submit" value="Crear Cita">
+
 			</fieldset>
 
 		</form>

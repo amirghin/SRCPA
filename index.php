@@ -1,12 +1,16 @@
 <?php
 Include "header.php";
 Include "DatabaseConnector.php";
+session_start();
+$_SESSION["nombre"] = $_POST["nombre_usuario"];
+$_SESSION["contrasena"] = $_POST["password"];
+
 ?>
 
 <section class="content row">
 
 	<div class="login col-md-6">
-		<form action="landing_page.php" method="POST" role="form" data-parsley-validate>
+		<form action="verify_password.php" method="POST" role="form" data-parsley-validate>
 			<fieldset>
 				<legend>Iniciar sesion</legend>
 				<div class="form-group">

@@ -15,14 +15,14 @@ if ($_POST['password']!= $_POST['verificar_password'])
 		
 
 		$insert_user = "INSERT INTO usuarios (nombre, password, roles_idrol) VALUES ('${usuario}','${password}',${tipo})";
-
+		//mysqli_query($con,$insert_user);
 		if (mysqli_query($con, $insert_user)) {
     		echo "New record created successfully";
 		} else {
-    		echo "Error: " . $insert_user . "<br>" . mysqli_error($con);
+    		echo "Error: " . mysqli_error($con);
 		}
 
-		mysqli_close($conn);
+		mysqli_close($con);
 
  	}
 

@@ -75,6 +75,6 @@ if (mysqli_num_rows($info_animal) > 0) {
     echo "</tr>";
     echo "</table>";*/
 
-
+?>
 
 

@@ -6,10 +6,10 @@ if (mysqli_connect_errno())
   {
   echo "Failed to connect to MySQL: " . mysqli_connect_error();
   }else{
-  	echo "Connected to database"."<br>";
+  //echo "Connected to database"."<br>";
   }
 
-	$sql = "SELECT idrol, nombre FROM roles";
+	/*$sql = "SELECT idrol, nombre FROM roles";
 	$result = $con->query($sql);
 
 	if ($result->num_rows > 0) {
@@ -19,8 +19,8 @@ if (mysqli_connect_errno())
 	    }
 	} else {
 	    echo "0 results";
-	}
-	$con->close();
+	}*/
+	//$con->close();
 
 /*class DatabaseConnector{
 	public function __construct(){

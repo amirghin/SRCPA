@@ -8,7 +8,7 @@ $_SESSION["contrasena"] = $_POST["password"];
 ?>
 <div class="content">
 	<h2>Bienvenido <strong><?php echo $_SESSION["nombre"];?></strong></h2>
-	<p>Escoja alguna de las opciones</p>
+	<p>El sistema le permite crear nuevas citas</p>
 </div>
 
 
