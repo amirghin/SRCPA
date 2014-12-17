@@ -12,7 +12,7 @@ Include "header.php";
 <form action="" method="post">
 	<fieldset>
 		<legend>Por Due&ntilde;o:</legend>
-			Buscar Por: <input type="text" name="buscar">
+			Buscar Por: <input type="text" name="dueno_buscar">
 			<br>
 			<input type="radio" name="busqueda_dueno" value="nombre" checked> Nombre
 			<input type="radio" name="busqueda_dueno" value="apellido"> Apellido
@@ -26,7 +26,7 @@ Include "header.php";
 <form action="" method="post">
 	<fieldset>
 		<legend>Por Mascota:</legend>
-			Buscar Por: <input type="text" name="nombre">
+			Buscar Por: <input type="text" name="animal_buscar">
 			<br>
 			<input type="radio" name="busqueda_animal" value="nombre" checked> Nombre
 			<br><br>
@@ -37,9 +37,15 @@ Include "header.php";
 <?php
 if(isset($_POST['search_animal'])){
 
+	if ($_POST['animal_buscar'] != ""){
 	Include "busqueda_animal.php";
-	 }
 
+	 }else{
+
+
+	 	echo "Por favor digite el nombre de su mascota";
+	 }
+	}
 ?>
 
 

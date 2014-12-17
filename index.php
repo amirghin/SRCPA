@@ -4,7 +4,6 @@ Include "DatabaseConnector.php";
 session_start();
 $_SESSION["nombre"] = $_POST["nombre_usuario"];
 $_SESSION["contrasena"] = $_POST["password"];
-
 ?>
 
 <section class="content row">

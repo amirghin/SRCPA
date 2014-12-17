@@ -2,7 +2,7 @@
 
 Include "DatabaseConnector.php";
 
-$nombre_animal = strtoupper($_POST['nombre']);
+$nombre_animal = strtoupper($_POST['animal_buscar']);
 
 $query_animal = "SELECT a.idAnimal,a.nombre, a.tipo,a.raza,a.fechaNacimiento,CONCAT_WS(' ',d.nombre, d.apellido1) as dueno
 				FROM Veterinaria.Animal a , Veterinaria.Dueno d 
@@ -12,8 +12,6 @@ $query_animal = "SELECT a.idAnimal,a.nombre, a.tipo,a.raza,a.fechaNacimiento,CON
 
 $info_animal = mysqli_query($con, $query_animal);
 if (mysqli_num_rows($info_animal) > 0) {
-    // output data of each row
-	//echo "
     ?>
 	<table style="width:50%">
       	<tr>
