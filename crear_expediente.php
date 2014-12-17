@@ -5,7 +5,7 @@ Include "Owner.php";
 Include "Pet.php";
 Include "Expedient.php";
 Include "header.php";
-
+Include "DatabaseConnector.php";
 ?>
 	<h2>Formulario Creado Exitosamente</h2> 
 <?php	
@@ -15,5 +15,14 @@ Include "header.php";
 	echo $pet->getName();
 	echo $pet->getBirthdayDate();
 	echo $pet->getOwner();
+	echo $pet->sendToDatabase();
+	$con->close();
+	/*$insert_Mascota = "INSERT INTO Animal (nombre, tipo, raza, fechaNacimiento, Dueno_idDueno) VALUES ({'$pet->getName()'},{'$pet->getType()'}, {'$pet->getBreed()'} , {'$pet->getBirthdayDate()'},{'$pet->getOwner()'})";
+	if (mysqli_query($con, $insert_Mascota)) {
+		echo "Animal Creado de manera exitosa";
+	} else {
+		echo "Error: " . mysqli_error($con);
+	}
 
+	$con->close();*/
 ?>

@@ -63,6 +63,18 @@
 		public function getOwner(){
 			return $this->idOwner;
 		}
+
+		public function sendToDatabase(){
+			Include "DatabaseConnector.php";
+			$insert_Mascota = "INSERT INTO Animal (nombre, tipo, raza, fechaNacimiento, Dueno_idDueno) VALUES ('{$this->name}','{$this->type}', '{$this->breed}' , '{$this->birthdayDate}',{$this->idOwner})";
+			if (mysqli_query($con, $insert_Mascota)) {
+			echo "Animal Creado de manera exitosa";
+			} else {
+			echo "Error: " . mysqli_error($con);
+			}
+
+		
+		}
 	}
 
 ?>
