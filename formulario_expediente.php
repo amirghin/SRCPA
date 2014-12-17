@@ -29,8 +29,8 @@ Include "navigation.php";
 				</div>
 				<div class="form-group"> 
 					<label>Dueno</label>
-					<select class="form-control">
-						<option>Nombre: fulanito - cedula:</option>
+					<select class="form-control" name="dueno">
+						<option value="1">Nombre: fulanito - cedula:</option>
 						<option></option>
 					</select>	
 				</div>
