@@ -38,7 +38,7 @@ Include "header.php";
 if(isset($_POST['search_animal'])){
 
 	if ($_POST['animal_buscar'] != ""){
-	Include "busqueda_animal.php";
+	Include "busqueda.php";
 
 	 }else{
 
