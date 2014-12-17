@@ -12,7 +12,7 @@ $insert_cita = "INSERT INTO Proximas_Citas (Animal_idAnimal, fecha, descripcion)
 
 
 	if (mysqli_query($con, $insert_cita)) {
-		echo "Nuevo Cita creada";
+		echo "Nueva Cita creada";
 	} else {
 		echo "Error: " . mysqli_error($con);
 	}

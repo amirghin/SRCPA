@@ -1,9 +1,6 @@
 <br>
 
-<form action="formulario_cita.php" method="post">
-    <input type="submit" name="crear_cita" value="Crear proxima citas"/>
-    <input type="hidden" name="idAnimal" value="<?php echo "${_POST['idAnimal']}"?>">
-</form>
+
 <br>
 
 <?php
@@ -13,8 +10,11 @@ Include "navigation.php";
 
 ?>
 <br>
-<h2>Expediente de: <?php echo $_POST['nombreAnimal']?></h2>
-
+<h2>Expediente de: <?php echo $_POST['nombreAnimal']?></h2><br><br>
+<form action="formulario_cita.php" method="post">
+    <input type="submit" name="crear_cita" value="Crear proxima cita"/>
+    <input type="hidden" name="idAnimal" value="<?php echo "${_POST['idAnimal']}"?>">
+</form>
 <br><br>
 
 <?php
