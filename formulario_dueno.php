@@ -4,7 +4,7 @@ Include "navigation.php";
 ?>
 
 <br><br>
-<form action="" method="POST" role="form" data-parsley-validate>
+<form action="insert_dueno.php" method="POST" role="form" data-parsley-validate>
 	<fieldset class="col-md-6">
 		<legend>Datos del due&#241;o:</legend><br>
 		<div class="form-group">
@@ -14,7 +14,11 @@ Include "navigation.php";
 		<div class="form-group">
 			<label for="apellido">Primer Apellido <span class="error">*</span></label>
 			<input name="apellido" type="text" class="form-control" required/>
-		</div>	
+		</div>
+		<div class="form-group">
+			<label for="segundo_apellido">Segundo Apellido <span class="error">*</span></label>
+			<input name="segundo_apellido" type="text" class="form-control" required/>
+		</div>		
 		<div class="form-group col-md-6">
 			<label for="telefono">Numero de telefono <span class="error">*</span></label>
 			<input name="telefono" type="text" class="form-control" required/>

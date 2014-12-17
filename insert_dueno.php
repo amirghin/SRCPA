@@ -23,7 +23,7 @@ if (mysqli_num_rows(mysqli_query($con,$check_user)) > 0 ){
 		echo "Error: " . mysqli_error($con);
 	}
 
-	mysqli_close($con);
+	mysqli_close($con); 
 
 
 }
