@@ -13,52 +13,37 @@ $query_animal = "SELECT a.idAnimal,a.nombre, a.tipo,a.raza,a.fechaNacimiento,CON
 $info_animal = mysqli_query($con, $query_animal);
 if (mysqli_num_rows($info_animal) > 0) {
     // output data of each row
-	echo "<!DOCTYPE html>
+	//echo "
+    ?>
+	<table style="width:50%">
+      	<tr>
+        	<th>Nombre</th>
+        	<th>Especie</th>		
+        	<th>Raza</th>
+        	<th>Fecha Nacimiento</th>
+        	<th>Due&ntilde;o</th>
 
-	<html>
+      	</tr>
+        <?php while($row = mysqli_fetch_assoc($info_animal)) {?>
 
-	<head>
-	<style>
-		table, th, td {
-    		border: 1px solid black;
-    		border-collapse: collapse;
-		}
-		th, td {
-    		padding: 5px;
-		}
-	</style>
-	</head>
+        	<tr>
+        		<td><?php echo "${row['nombre']}" ?></td>
+        		<td><?php echo "${row['tipo']}"?></td>
+        		<td><?php echo "${row['raza']}"?></td>
+        		<td><?php echo "${row['fechaNacimiento']}"?></td>
+        		<td><?php echo "${row['dueno']}"?></td>
 
-	<body>
+      		</tr>
+       
 
-	<table style=\"width:50%\">
-  	<tr>
-    	<th>Nombre</th>
-    	<th>Especie</th>		
-    	<th>Raza</th>
-    	<th>Fecha Nacimiento</th>
-    	<th>Due&ntilde;o</th>
-
-  	</tr>";
-    while($row = mysqli_fetch_assoc($info_animal)) {
-
-    	echo "<tr>
-    		<td>${row['nombre']}</td>
-    		<td>${row['tipo']}</td>
-    		<td>${row['raza']}</td>
-    		<td>${row['fechaNacimiento']}</td>
-    		<td>${row['dueno']}</td>
-
-  		</tr>";
-        
-
-    }
-
-    echo "</table>";
-
-}
+        <?php }; ?>
+    </table> 
+    
+ <?php }; ?>
 
 
-?>
+
+
+
 
 
