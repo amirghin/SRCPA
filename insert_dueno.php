@@ -2,7 +2,7 @@
 
 Include "DatabaseConnector.php";
 
-$nombre = $_POST['nombre'];
+$nombre = strtolower($_POST['nombre']);
 $apellido = $_POST['apellido'];
 $telefono = $_POST['telefono'];
 $email = $_POST['email'];

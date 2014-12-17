@@ -2,12 +2,6 @@
 Include "DatabaseConnector.php";
 Include "header.php";
 Include "navigation.php";
-
-if(isset($_POST['create_user'])){
-
-	Include "insert_user.php";
-	 }
-
 ?>
 
 <br><br>
@@ -52,5 +46,9 @@ if(isset($_POST['create_user'])){
 
 
 <?php
+if(isset($_POST['create_user'])){
+
+	Include "insert_user.php";
+}
 Include "footer.php";
 ?>

@@ -9,7 +9,7 @@ if ($_POST['password']!= $_POST['verificar_password'])
 
  		$options = array('cost' => 11);
 		$password = password_hash($_POST['password'], PASSWORD_BCRYPT, $options);
-		$usuario = $_POST['nombre_usuario'];
+		$usuario = strtolower($_POST['nombre_usuario']);
 		$tipo = $_POST['tipo_usuario'];
 		
 		$check_user = "SELECT idusuarios FROM usuarios WHERE nombre = '${usuario}'";
