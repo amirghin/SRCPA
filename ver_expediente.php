@@ -1,5 +1,9 @@
 <br>
-<a href="formulario_cita.php">Crear proxima cita</a>
+
+<form action="formulario_cita.php" method="post">
+    <input type="submit" name="crear_cita" value="Crear proxima citas"/>
+    <input type="hidden" name="idAnimal" value="<?php echo "${_POST['idAnimal']}"?>">
+</form>
 <br>
 
 <?php
