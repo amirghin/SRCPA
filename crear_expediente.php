@@ -12,19 +12,20 @@ Include "DatabaseConnector.php";
  echo $pet->sendToDatabase();
  $nombre = $_POST["nombre_mascota"];
  $id_dueno= $_POST["dueno"];
- //echo $nombre;
- //echo $id_dueno;
+
  $query_expediente = "SELECT a.idAnimal FROM Animal a, Dueno d WHERE d.idDueno = '${id_dueno}' AND a.nombre = '${nombre}'";
  $info_id = mysqli_query($con, $query_expediente);
- //$id_animal = mysqli_fetch(mysqli_query($con, $query_expediente));
+
 
  while ($row=mysqli_fetch_assoc($info_id))
     {
-     $query_crear_expediente = "INSERT into Expediente(Animal_idAnimal) values (${row['idAnimal']})";
+     $query_crear_expediente = "INSERT INTO Expediente(Animal_idAnimal) values (${row['idAnimal']})";
+     $query_crear_citas = "INSERT INTO Citas(Animal_idAnimal) values (${row['idAnimal']})";
      mysqli_query($con, $query_crear_expediente);
+     ysqli_query($con, $query_crear_citas);
     }
 
- //echo $id_animal;
+
 
  $con->close();
 

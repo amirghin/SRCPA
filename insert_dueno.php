@@ -1,5 +1,6 @@
 <?php
-
+Include "header.php";
+Include "navigation.php";
 Include "DatabaseConnector.php";
 
 $nombre = $_POST['nombre'];
@@ -29,5 +30,6 @@ if (mysqli_num_rows(mysqli_query($con,$check_user)) > 0 ){
 
 }
 
-
+Include "footer.php";
 ?>
+

@@ -1,5 +1,6 @@
 <?php
-
+Include "header.php";
+Include "navigation.php";
 Include "DatabaseConnector.php";
 
 $fechaCita = $_POST['fecha_cita'];
@@ -20,6 +21,6 @@ $insert_cita = "INSERT INTO Proximas_Citas (Animal_idAnimal, fecha, descripcion)
 	mysqli_close($con); 
 
 
-
+Include "footer.php";
 
 ?>

@@ -7,6 +7,9 @@
 		$(document).ready(function(){
 			$( "#datepicker" ).datepicker();
 			$( "#datepicker" ).datepicker( "option", "dateFormat", 'yy-mm-dd' );
+			$("#mostrar").click(function(){
+				$("#entrada_expediente").show();
+			})
 
 		})
 	</script>
